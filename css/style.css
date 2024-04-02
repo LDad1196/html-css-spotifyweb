@@ -1,3 +1,4 @@
+/********** Generic selectors **********/
 * {
     padding: 0;
     margin: 0;
@@ -8,4 +9,83 @@ body {
     font-family: "Madimi One", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+/********** Main generic selectors **********/
+
+main {
+    background-color: #222;
+    color: grey;
+    width: 100%;
+    min-height: 90vh;
+}
+
+.flex {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+.m-top1 {
+    margin-top: 0.5rem;
+}
+.m-bottom30 {
+    margin-bottom: 30rem;
+}
+a:hover {
+    color: white;
+}
+
+.border-white {
+    border-bottom: 1px solid white;
+}
+
+h6 {
+    font-size: 1rem;
+    padding: 0.5rem;
+    color: white;
+}
+/********** Burger menù **********/
+
+.burger-menu {
+    background-color: black;
+    width: 20%;
+    padding: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.logo {
+    width: 50%;
+}
+
+.command-section {
+    gap: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.command-section:hover {
+    border-left: 1px solid yellow;
+    color: white;
+}
+
+.patch-command {
+    width: 5%;
+}
+
+.download-png {
+    width: 5%;
+    margin-left: 0;
+}
+/********** Central section **********/
+
+/********** Nav **********/
+nav {
+    background-color: gray;
+    min-height: 10vh;
 }
