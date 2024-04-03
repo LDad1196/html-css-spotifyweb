@@ -42,6 +42,13 @@ a:hover {
     border-bottom: 1px solid white;
 }
 
+.padding {
+    padding: 0.5rem;
+}
+h3 {
+    padding: 0.5rem;
+    color: white;
+}
 h6 {
     font-size: 1rem;
     padding: 0.5rem;
@@ -126,6 +133,24 @@ h6 {
 
 .menu-selector:hover {
     border-bottom: 1px solid greenyellow;
+}
+
+.card-container {
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem 0;
+    gap: 1rem;
+    flex-shrink: 1;
+}
+
+.card-recently {
+    width: calc((100% / 6) - 1rem);
+    text-align: center;
+}
+
+.img-card {
+    width: 100%;
+    margin-bottom: 0.5rem;
 }
 /********** Nav **********/
 nav {
