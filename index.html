@@ -19,15 +19,15 @@
             <div class="burger-high-section">
                 <img class="logo" src="./img/logo.svg" alt="logo">
                 <div class="flex command-section">
-                    <img class="patch-command" src="./img/home.svg" alt="">
+                    <i class="fa-solid fa-house"></i>
                     <a href="#">Home</a>
                 </div>
                 <div class="flex command-section">
-                    <img class="patch-command" src="./img/search.svg" alt="">
+                    <i class="fa-solid fa-magnifying-glass"></i>
                     <a href="#">Cerca</a>
                 </div>
                 <div class="flex command-section">
-                    <img class="patch-command" src="./img/libreria.svg" alt="">
+                    <i class="fa-solid fa-lines-leaning"></i>
                     <a href="#">La tua libreria</a>
                 </div>
                 <div class=" playlist-zone">
@@ -45,7 +45,7 @@
                 
             <div class="burger-lower-section">
                 <div class="flex command-section border-white">
-                    <img class="download-png" src="./img/download.svg" alt="">
+                    <i class="fa-solid fa-circle-down"></i>
                     <a href="#">Installa app</a>                    </div>
                     <div class="flex command-section m-top1">
                         <i class="fa-solid fa-circle-user"></i>
@@ -137,7 +137,7 @@
                     <div>Subtitle</div>
                 </div>
             </section>
-
+            <!-- Sezione Daily Mix -->
             <section class="padding">
                 <h3>Creato per John Doe</h3>
                 <div>Più ascolti, più accurati saranno i suggerimenti</div>
@@ -163,7 +163,8 @@
                     </div>
                 </div>
             </section>
-
+        
+             <!-- Sezione artisti più popolari -->
             <section class="padding">
                 <h3>Artisti più popolari</h3>
                 <div>Più ascolti, più accurati saranno i suggerimenti</div>
@@ -177,7 +178,7 @@
                         </div>
                         <h6>Lana del Rey</h6>
                     </div>
-                    
+                   
                     <div class="card-popular">
                         <div>
                             <img class="img-card-popular" src="./img/einaudi.jpeg" alt="">
@@ -187,14 +188,65 @@
                         </div>
                         <h6>Ludovico Einaudi</h6>
                     </div>
-
                 </div>
             </section>
         </section>
     </main>
 
     <!-- Music Player -->
-    <nav></nav>
+    <nav class="flex nav-bar">
+        <!-- Zona traccia -->
+        <section class=" flex lateral-nav">
+            <div class="track-column">
+            <img class="player-img" src="./img/sinister.jpeg" alt="">
+            </div>
+            <div class="name-track track-column">
+                <h6>Sinister</h6>
+                <div>Cristopher Young</div>
+            </div>
+            <div class="track-cta">
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+            </div>
+            <div class="track-cta">
+                <a href="#"><i class="fa-regular fa-folder"></i></a>
+            </div>
+        </section>
+        <!-- Player -->
+        <section class="flex central-nav">
+            <div class="up-player">
+                <div>
+                    <a href=""><i class="fa-solid fa-shuffle"></i></a>
+                </div>
+                <div>
+                    <a href=""><i class="fa-solid fa-backward"></i></a>
+                </div>
+                <div>
+                    <a href=""><i class="fa-solid fa-circle-play"></i></a>
+                </div>
+                <div>
+                    <a href=""><i class="fa-solid fa-forward"></i></a>
+                </div>
+                <div>
+                    <a href=""><i class="fa-solid fa-rotate-left"></i></a>
+                </div>
+            </div>
+
+            <div class="slidercontainer">
+                <input class="slider" type="range" min="00:00" max="03:14" value="01:00">        
+            </div>
+        </section>
+        <!-- Volume -->
+        <section class="flex lateral-nav">
+            <div class="m-right m-left"><i class="fa-solid fa-list"></i></div>
+            <div class="m-right"><i class="fa-solid fa-display"></i></div>
+            <div class="m-right"><i class="fa-solid fa-volume-high"></i></div>
+            <div class="volume-container">
+                <input class="slider" type="range" min="00:00" max="03:14" value="01:00">
+            </div>
+
+        </section>
+
+    </nav>
     
 </body>
 </html>
