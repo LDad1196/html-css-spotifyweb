@@ -68,7 +68,7 @@ h6 {
     padding: 1rem;
     flex-direction: column;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
 }
 
 .burger-high-section {
@@ -79,10 +79,13 @@ h6 {
     height: 10%;
 }
 .logo {
-    width: 60%;
+    width: 100%;
     margin-bottom: 2rem;
 }
 
+.logo-mini {
+    display: none;
+}
 .command-section {
     gap: 0.5rem;
     padding: 0.5rem;
@@ -93,6 +96,10 @@ h6 {
 .command-section:hover {
     border-left: 1px solid yellow;
     color: white;
+}
+
+.playlist-zone { 
+    overflow: auto;
 }
 /********** Central section **********/
 
@@ -166,8 +173,8 @@ h6 {
 
 .play {
     position: absolute;
-    top: 35%;
-    right: 42%;
+    top: 22%;
+    right: 35%;
     font-size: 50px;
     color: #ffffff;
     visibility: hidden;
@@ -233,7 +240,7 @@ nav {
     margin: 0 1rem;
 }
 .player-img {
-    width: 30%;
+    width: 90%;
 }
 
 .name-track {
@@ -242,11 +249,12 @@ nav {
 }
 
 .up-player {
-    height: 50%;
+    height: 80%;
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 1rem;
+    font-size: 2rem
 }
 
 .slidercontainer {
@@ -284,3 +292,120 @@ nav {
   .volume-container {
     width: 60%;
   }
+
+
+/********** Media queries **********/
+  @media screen  and (max-width: 1102px){
+        body,
+        .command-section{
+            font-size: 0.7rem;
+        }
+
+        h3,
+        h6 {
+            font-size: 1rem;
+        }
+
+        .player-img {
+            width: 100%;
+        }
+
+        .name-track {
+            width: 40%;
+        }
+  }
+
+  @media screen  and (max-width: 810px){
+        
+        .name-track {
+            display: none;
+        }
+    
+        .card-container {
+            flex-wrap: wrap;
+        }
+    
+        .play {
+            top: 22%;
+            right: 31%;
+        }
+        .card-recently,
+        .card-mix,
+        .card-popular {
+            width: calc((100% / 4) - 1rem);
+        }
+
+        .player-img {
+            width: 300%;
+        }
+  }
+
+  @media screen  and (max-width: 810px){
+        
+    .burger-menu {
+        padding: 0.5rem;
+    }
+   
+    .name-track {
+        display: none;
+    }
+
+    .card-container {
+        flex-wrap: wrap;
+    }
+
+    .play {
+        top: 22%;
+        right: 31%;
+    }
+    .card-recently,
+    .card-mix,
+    .card-popular {
+        width: calc((100% / 4) - 1rem);
+    }
+
+    .player-img {
+        width: 150%;
+    }
+
+    .fa-heart {
+        margin-left: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .hidden {
+        display: none;
+    }
+}
+
+@media screen  and (max-width: 580px){
+
+    .logo {
+        display: none;
+    }
+
+    .logo-mini {
+        display: block;
+    }
+
+   
+    .command-section {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+
+    .play {
+        top: 28%;
+        right: 37%;
+    }
+
+    .card-recently,
+    .card-mix,
+    .card-popular {
+        width: calc((100% / 2) - 1rem);
+    }
+
+    span {
+        display: none;
+    }
+}
