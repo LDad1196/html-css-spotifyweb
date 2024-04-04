@@ -60,11 +60,18 @@ h6 {
     background-color: black;
     width: 15%;
     padding: 1rem;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-content: center;
 }
 
+.burger-high-section {
+    height: 80%;
+}
+
+.burger-lower-section {
+    height: 20%;
+}
 .logo {
     width: 60%;
     margin-bottom: 2rem;
@@ -146,6 +153,7 @@ h6 {
 .card-popular {
     width: calc((100% / 6) - 1rem);
     text-align: center;
+    position: relative;
 }
 
 .img-card,
@@ -157,6 +165,23 @@ h6 {
 .img-card-popular {
     aspect-ratio: 1;
     border-radius: 50%;
+}
+
+.play {
+    position: absolute;
+    top: 35%;
+    right: 42%;
+    font-size: 50px;
+    color: #ffffff;
+    visibility: hidden;
+}
+
+.card-recently:hover {
+    .play {
+        visibility: visible;
+        box-shadow:0px 0px 15px  rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+    }
 }
 /********** Nav **********/
 nav {
